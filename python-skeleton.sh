@@ -22,8 +22,6 @@ if [[ $# -gt 0 ]] && [[ "$1" == "--debug" ]]; then
     set -o xtrace
 fi
 
-echo "<SCRIPT_PATH:${SCRIPT_PATH}>"
-
 # Confirm if an environment is set up
 if [[ ! -d 'venv' ]]; then
     NEW_ENV=1
